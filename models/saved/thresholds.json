@@ -1,0 +1,52 @@
+{
+  "anomaly_min": -0.07840107647496963,
+  "anomaly_max": 0.35925549533361223,
+  "feature_names": {
+    "behavior": [
+      "beh_src_count_1h",
+      "beh_src_amount_1h",
+      "beh_src_count_24h",
+      "beh_src_amount_24h",
+      "beh_src_count_72h",
+      "beh_src_amount_72h",
+      "beh_src_amount_zscore",
+      "beh_first_time_counterparty",
+      "beh_new_device",
+      "beh_new_ip",
+      "beh_new_city",
+      "beh_fan_in_72h",
+      "beh_fan_out_72h",
+      "beh_round_amount",
+      "beh_just_below_threshold",
+      "beh_passthrough_ratio",
+      "beh_remark_risk_flag",
+      "beh_time_of_day_dev"
+    ],
+    "graph": [
+      "graph_src_in_degree",
+      "graph_src_out_degree",
+      "graph_dst_in_degree",
+      "graph_dst_out_degree",
+      "graph_src_distinct_counterparties",
+      "graph_src_shared_device_links",
+      "graph_src_community_size",
+      "graph_src_community_density",
+      "graph_src_comm_total_amount",
+      "graph_src_comm_sub_threshold_edges"
+    ],
+    "provenance": [
+      "prov_max_root_amount",
+      "prov_max_hops",
+      "prov_max_fragments",
+      "prov_sub_threshold_fragments_ratio",
+      "prov_fragment_root_share",
+      "prov_dwell_time_min",
+      "prov_dwell_time_mean",
+      "prov_distinct_path_accounts",
+      "prov_origin_is_cash",
+      "prov_origin_is_unknown",
+      "prov_just_below_threshold",
+      "prov_hash_chain_ok"
+    ]
+  }
+}
