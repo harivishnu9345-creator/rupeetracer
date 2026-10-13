@@ -1,0 +1,183 @@
+Inspecting: C:\Users\hariv\OneDrive\Desktop\rupeetrace\rupeetrace
+Total files: 78
+
+======================================================================
+1. FOLDER TREE
+======================================================================
+rupeetrace/
+|-- dashboard/
+|   |-- components/
+|   |   |-- __init__.py  [170B]  (4 lines)
+|   |   |-- charts.py  [14.3KB]  (270 lines)
+|   |   `-- ui.py  [5.6KB]  (126 lines)
+|   |-- __init__.py  [0B]  <-- EMPTY
+|   `-- app.py  [22.7KB]  (425 lines)
+|-- data/
+|   |-- out/
+|   |   |-- accounts.csv  [447.5KB]  (5000 rows)
+|   |   |-- scenarios.csv  [10.5KB]  (127 rows)
+|   |   `-- transactions.csv  [49.3MB]  (445022 rows)
+|   |-- __init__.py  [0B]  <-- EMPTY
+|   |-- generator.py  [37.4KB]  (718 lines)
+|   |-- ibm_loader.py  [9.9KB]  (190 lines)
+|   `-- schemas.py  [9.0KB]  (238 lines)
+|-- engine/
+|   |-- __init__.py  [0B]  <-- EMPTY
+|   |-- api.py  [5.6KB]  (171 lines)
+|   |-- cases.py  [12.0KB]  (226 lines)
+|   |-- engine.py  [12.3KB]  (236 lines)
+|   |-- fusion.py  [11.1KB]  (236 lines)
+|   |-- metrics.py  [7.7KB]  (160 lines)
+|   |-- mock_provider.py  [11.4KB]  (276 lines)
+|   |-- orchestrator.py  [6.1KB]  (150 lines)
+|   `-- recording.py  [6.6KB]  (188 lines)
+|-- eval/
+|   |-- out/
+|   |   |-- ablation.csv  [372B]  (1 rows)
+|   |   |-- ablation.html  [8.4KB]
+|   |   |-- ablation.md  [593B]  (7 lines)
+|   |   |-- buckets.csv  [272B]  (3 rows)
+|   |   |-- buckets.md  [382B]  (7 lines)
+|   |   |-- buckets_precision.html  [7.8KB]
+|   |   |-- buckets_recall.html  [7.8KB]
+|   |   |-- latency.csv  [260B]  (1 rows)
+|   |   |-- latency.html  [8.4KB]
+|   |   |-- latency.md  [344B]  (5 lines)
+|   |   |-- metrics_summary.csv  [751B]  (1 rows)
+|   |   |-- metrics_summary.json  [1.0KB]  (37 lines)
+|   |   `-- predictions_A_rules.csv  [3.7MB]  (132091 rows)
+|   |-- __init__.py  [0B]  <-- EMPTY
+|   |-- _common.py  [1.8KB]  (57 lines)
+|   |-- ablation.py  [2.4KB]  (60 lines)
+|   |-- buckets.py  [2.8KB]  (72 lines)
+|   |-- gc_latency_check.py  [1.7KB]  (42 lines)
+|   |-- latency.py  [2.3KB]  (61 lines)
+|   |-- make_predictions.py  [3.7KB]  (92 lines)
+|   |-- metrics.py  [6.1KB]  (138 lines)
+|   `-- rules_baseline.py  [5.0KB]  (121 lines)
+|-- features/
+|   |-- __init__.py  [33B]  (1 lines)
+|   |-- behavior.py  [5.7KB]  (155 lines)
+|   |-- graph.py  [4.5KB]  (121 lines)
+|   `-- provenance.py  [3.3KB]  (102 lines)
+|-- ledger/
+|   |-- __init__.py  [0B]  <-- EMPTY
+|   |-- hashchain.py  [1.3KB]  (37 lines)
+|   `-- lots.py  [8.9KB]  (253 lines)
+|-- models/
+|   |-- __init__.py  [0B]  <-- EMPTY
+|   |-- explain.py  [2.3KB]  (47 lines)
+|   |-- stream_scorer.py  [6.5KB]  (155 lines)
+|   `-- train.py  [3.6KB]  (97 lines)
+|-- tests/
+|   |-- __init__.py  [0B]  <-- EMPTY
+|   |-- conftest.py  [222B]  (9 lines)
+|   |-- test_api.py  [1.7KB]  (60 lines)
+|   |-- test_cases.py  [1.8KB]  (41 lines)
+|   |-- test_components.py  [11.8KB]  (246 lines)
+|   |-- test_data.py  [3.4KB]  (97 lines)
+|   |-- test_eval.py  [6.6KB]  (148 lines)
+|   |-- test_features.py  [3.4KB]  (90 lines)
+|   |-- test_fusion.py  [13.5KB]  (331 lines)
+|   |-- test_hashchain.py  [657B]  (15 lines)
+|   |-- test_ibm_loader.py  [2.0KB]  (49 lines)
+|   |-- test_ledger.py  [2.0KB]  (53 lines)
+|   |-- test_mock_provider.py  [1.6KB]  (53 lines)
+|   |-- test_models.py  [2.5KB]  (67 lines)
+|   |-- test_orchestrator.py  [5.1KB]  (123 lines)
+|   `-- test_provenance.py  [1.7KB]  (32 lines)
+|-- .gitignore  [34B]
+|-- config.py  [3.0KB]  (88 lines)
+|-- conftest.py  [0B]  <-- EMPTY
+|-- inspect_repo.py  [13.7KB]  (381 lines)
+|-- make_sample.py  [560B]  (10 lines)
+|-- README.md  [7.1KB]  (88 lines)
+|-- repo_report.txt  [7.4KB]  (174 lines)
+`-- requirements.txt  [108B]  (12 lines)
+
+======================================================================
+2. EXPECTED FILES CHECKLIST
+======================================================================
+  [PRESENT]    config.py
+  [PRESENT]    requirements.txt
+  [PRESENT]    README.md
+  [PRESENT]    data/schemas.py
+  [PRESENT]    data/generator.py
+  [PRESENT]    data/ibm_loader.py (optional)
+  [PRESENT]    data/out/accounts.csv
+  [PRESENT]    data/out/transactions.csv
+  [PRESENT]    data/out/scenarios.csv
+  [PRESENT]    ledger/lots.py
+  [PRESENT]    ledger/hashchain.py
+  [PRESENT]    features/behavior.py
+  [PRESENT]    features/graph.py
+  [PRESENT]    features/provenance.py
+  [PRESENT]    models/train.py
+  [PRESENT]    models/explain.py
+  [PRESENT]    models/stream_scorer.py
+  [MISSING]    models/saved/thresholds.json
+  [PRESENT]    engine/fusion.py
+  [PRESENT]    engine/orchestrator.py
+  [PRESENT]    engine/cases.py
+  [PRESENT]    engine/engine.py
+  [PRESENT]    engine/mock_provider.py
+  [PRESENT]    engine/api.py
+  [PRESENT]    dashboard/app.py
+  [PRESENT]    engine/metrics.py
+  [PRESENT]    engine/recording.py
+  [PRESENT]    dashboard/components/__init__.py
+  [PRESENT]    dashboard/components/charts.py
+  [PRESENT]    dashboard/components/ui.py
+  [PRESENT]    eval/rules_baseline.py
+  [PRESENT]    eval/metrics.py
+  [PRESENT]    eval/ablation.py
+  [PRESENT]    eval/buckets.py
+  [PRESENT]    eval/latency.py
+  [PRESENT]    eval/gc_latency_check.py
+  [PRESENT]    eval/out/predictions_A_rules.csv
+  [MISSING]    eval/out/predictions_B_behavior_anomaly.csv
+  [MISSING]    eval/out/predictions_C_plus_graph.csv
+  [MISSING]    eval/out/predictions_D_plus_provenance.csv
+  [PRESENT]    tests/test_data.py
+  [PRESENT]    tests/test_eval.py
+  [PRESENT]    tests/test_ibm_loader.py
+  [PRESENT]    tests/test_provenance.py
+  [PRESENT]    tests/test_models.py
+  [PRESENT]    tests/test_ledger.py
+  [PRESENT]    tests/test_hashchain.py
+  [MISSING]    tests/test_no_leakage.py
+  [PRESENT]    tests/test_features.py
+  [PRESENT]    tests/test_fusion.py
+  [PRESENT]    tests/test_orchestrator.py
+  [PRESENT]    tests/test_cases.py
+  [PRESENT]    tests/test_mock_provider.py
+  [PRESENT]    tests/test_components.py
+  [PRESENT]    tests/test_api.py
+
+Summary: 50 present, 0 empty, 0 in the wrong place, 5 missing (required).
+  STILL TO GENERATE: models/saved/thresholds.json, eval/out/predictions_B_behavior_anomaly.csv, eval/out/predictions_C_plus_graph.csv, eval/out/predictions_D_plus_provenance.csv, tests/test_no_leakage.py
+
+======================================================================
+3. UNRESOLVED IMPORTS (code that depends on something not written yet)
+======================================================================
+  None. Every project import resolves.
+  (Imports inside try/except may be optional, so treat those as hints.)
+
+======================================================================
+4. TEST INVENTORY
+======================================================================
+  tests\test_api.py                             3 test functions
+  tests\test_cases.py                           1 test functions
+  tests\test_components.py                      24 test functions
+  tests\test_data.py                            12 test functions
+  tests\test_eval.py                            13 test functions
+  tests\test_features.py                        4 test functions
+  tests\test_fusion.py                          29 test functions
+  tests\test_hashchain.py                       1 test functions
+  tests\test_ibm_loader.py                      3 test functions
+  tests\test_ledger.py                          3 test functions
+  tests\test_mock_provider.py                   3 test functions
+  tests\test_models.py                          3 test functions
+  tests\test_orchestrator.py                    14 test functions
+  tests\test_provenance.py                      1 test functions
+  Total: 114 test functions
